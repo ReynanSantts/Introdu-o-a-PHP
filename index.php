@@ -1,5 +1,10 @@
 <?php
 
+//importação de arquivos
+require 'helper.php';
+
+echo validarEnderecoEmail('reyna@example.com');
+//echo validarEnderecoEmail('https//google.com');
 //Irmão do Console.log()
 echo"<h1>Hello world</h1>";
 echo"<hr>";
@@ -11,7 +16,15 @@ if($nome === "Reynan" and $idade === "17"){
 
 echo "<br>";
 
-//Função
+//PHPDoc
+
+/** 
+ * Função de saudação
+ *@param string Nome do usuario
+ *@return string  Mensagem de saudação com o nome do usuario
+ *@author Reynan Mesquita <>
+*/
+
 function saudacao(string $nome){
     return "Olá ".$nome;
 }
